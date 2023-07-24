@@ -2,14 +2,18 @@
 
 /****************** PRINT POINTER ******************/
 /**
- * print_pointer - Prints the value of a pointer variable
- * @types: List a of arguments
- * @buffer: Buffer array to handle print
+ * print_pointer - Print the pointer to the buffer
+ * @types: variable argument list that contains
+ * the arguments that were passed to the function.
+ * @buffer: buffer that the function will write the pointer to
  * @flags:  Calculates active flags
  * @width: get width
- * @precision: Precision specification
- * @size: Size specifier
- * Return: Number of chars printed.
+ * @precision: maximum number of characters that
+ * will be printed for the pointer.
+ * If the pointer is longer than the precision,
+ * it will be truncated.
+ * @size: size of the pointer in bytes.
+ * Return: the number of characters that were written to the buffer
  */
 int print_pointer(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -55,11 +59,14 @@ int print_pointer(va_list types, char buffer[],
 /************************* PRINT NON PRINTABLE *************************/
 /**
  * print_non_printable - Prints ascii codes in hexa of non printable chars
- * @types: Lista of arguments
- * @buffer: Buffer array to handle print
+ * @types: variable argument list that contains
+ * the arguments that were passed to the function.
+ * @buffer: buffer that the function will write
+ * the non-printable characters to.
  * @flags:  Calculates active flags
- * @width: get width
- * @precision: Precision specification
+ * @width: minimum width of the non-printable characters in the output
+ * @precision: maximum number of characters
+ * that will be printed for the non-printable characters
  * @size: Size specifier
  * Return: Number of chars printed
  */
@@ -94,9 +101,10 @@ int print_non_printable(va_list types, char buffer[],
 
 /************************* PRINT REVERSE *************************/
 /**
- * print_reverse - Prints reverse string.
- * @types: Lista of arguments
- * @buffer: Buffer array to handle print
+ * print_reverse - reverses the string and writes it to the buffer
+ * @types: variable argument list that contains
+ * the arguments that were passed to the function.
+ * @buffer: buffer that the function will write the reversed string to.
  * @flags:  Calculates active flags
  * @width: get width
  * @precision: Precision specification
