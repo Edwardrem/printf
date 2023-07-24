@@ -6,7 +6,7 @@
  * and other types of data in a formatted way.
  * @format: Formatted string in which to print the arguments.
  * @i: List of arguments to be printed.
- * @list: list of arguments.
+ * @list: variable-length of argument list
  *
  * Return: width of the formatted string.
  */
