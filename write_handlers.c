@@ -2,7 +2,8 @@
 
 /************************* WRITE HANDLE *************************/
 /**
- * handle_write_char - Prints a string
+ * handle_write_char - stores a character at the left
+ * and pads the buffer with the specified character at the right.
  * @c: char types.
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags.
@@ -10,7 +11,8 @@
  * @precision: precision specifier
  * @size: Size specifier
  *
- * Return: Number of chars printed.
+ * Return: the number of characters
+ * that were written to the standard output stream.
  */
 int handle_write_char(char c, char buffer[],
 	int flags, int width, int precision, int size)
@@ -46,7 +48,8 @@ int handle_write_char(char c, char buffer[],
 
 /************************* WRITE NUMBER *************************/
 /**
- * write_number - Prints a string
+ * write_number - writes the given number to the buffer,
+ * according to the given formatting flags.
  * @is_negative: Lista of arguments
  * @ind: char types.
  * @buffer: Buffer array to handle print
@@ -55,7 +58,7 @@ int handle_write_char(char c, char buffer[],
  * @precision: precision specifier
  * @size: Size specifier
  *
- * Return: Number of chars printed.
+ * Return: number of characters that were written to the buffer
  */
 int write_number(int is_negative, int ind, char buffer[],
 	int flags, int width, int precision, int size)
@@ -79,7 +82,7 @@ int write_number(int is_negative, int ind, char buffer[],
 }
 
 /**
- * write_num - Write a number using a bufffer
+ * write_num - writes the formatted number to the standard output stream
  * @ind: Index at which the number starts on the buffer
  * @buffer: Buffer
  * @flags: Flags
