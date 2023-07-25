@@ -3,9 +3,9 @@
 void print_buffer(char buffer[], int *buff_ind);
 
 /**
- * _printf - implementation of the print function
+ * _printf - implementation of the  whole print function
  * @format: format.
- * Return:  the number of characters that were printed
+ * Return:  the number of characters that are printed
  * to the standard output stream.
  * If an error occurs, then the function returns -1.
  */
