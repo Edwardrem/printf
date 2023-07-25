@@ -7,14 +7,14 @@
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
 
-/* FLAGS Handling the following flag characters for non-custom conversion specifiers */
+/* Handling the following flag characters for conversion specifiers */
 #define F_MINUS 1
 #define F_PLUS 2
 #define F_ZERO 4
 #define F_HASH 8
 #define F_SPACE 16
 
-/* SIZES Handling the following length modifiers for non-custom conversion specifiers */
+/*Handling the following length modifiers for non-custom conversion*/
 #define S_LONG 2
 #define S_SHORT 1
 
