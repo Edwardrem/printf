@@ -1,12 +1,14 @@
 #include "main.h"
 
 /**
- * get_width - Calculates the width for printing
+ * get_width - get the width of a formatted string.
+ * The function can be used to print strings, numbers,
+ * and other types of data in a formatted way.
  * @format: Formatted string in which to print the arguments.
  * @i: List of arguments to be printed.
- * @list: list of arguments.
+ * @list: variable-length of argument list
  *
- * Return: width.
+ * Return: width of the formatted string.
  */
 int get_width(const char *format, int *i, va_list list)
 {

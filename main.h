@@ -7,14 +7,14 @@
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
 
-/* FLAGS */
+/* FLAGS Handling the following flag characters for non-custom conversion specifiers */
 #define F_MINUS 1
 #define F_PLUS 2
 #define F_ZERO 4
 #define F_HASH 8
 #define F_SPACE 16
 
-/* SIZES */
+/* SIZES Handling the following length modifiers for non-custom conversion specifiers */
 #define S_LONG 2
 #define S_SHORT 1
 
@@ -45,7 +45,11 @@ va_list list, char buffer[], int flags, int width, int precision, int size);
 
 /****************** FUNCTIONS ******************/
 
+<<<<<<< HEAD
 /* Funtions used  to print chars and strings */
+=======
+/* Funtions to print chars ,strings and percent */
+>>>>>>> afdfa673f50922a5b78c3a898b3e2b2af19d35e7
 int print_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int print_string(va_list types, char buffer[],
@@ -106,7 +110,7 @@ int write_unsgnd(int is_negative, int ind,
 char buffer[],
 	int flags, int width, int precision, int size);
 
-/****************** UTILS ******************/
+/****************** UTILS support functions ******************/
 int is_printable(char);
 int append_hexa_code(char, char[], int);
 int is_digit(char);
